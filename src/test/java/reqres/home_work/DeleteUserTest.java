@@ -31,6 +31,7 @@ public class DeleteUserTest {
     @ParameterizedTest
     @ValueSource(strings = {"31", "202"})
     @Description("Неуспешное удаление пользователя")
+    @DisplayName("Неуспешное удаление пользователя")
     @Severity(SeverityLevel.NORMAL)
     public void unsuccessfulDelUser(String id){
         Response response = deleteReqresStep.deleteUser(id);
