@@ -1,0 +1,30 @@
+name: Run ReqRes test
+
+on: push
+
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: "Использование ветки main репозитория"
+        uses: actions/checkout@v3
+      - name: "Запуск тестов"
+        run: mvn clean test
+        continue-on-error: true
+      - name: simple-elf/allure-report-action@master
+        id: allure-report
+        with:
+          allure_results: target/allure-results
+          gh_pages: gh_pages
+          allure_report: target/allure-report
+          allure_history: target/allure-history
+
+      - name: "Создание ветки gh-pages, содержащей allure report"
+        uses: properties/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: target/allure-history
