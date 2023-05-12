@@ -1,0 +1,12 @@
+/Users/klukina9013/Downloads/RestAssured/src/main/java/api/models/RegisterUser.java
+/Users/klukina9013/Downloads/RestAssured/src/main/java/api/steps/seminar/SpecHelper.java
+/Users/klukina9013/Downloads/RestAssured/src/main/java/api/models/Support.java
+/Users/klukina9013/Downloads/RestAssured/src/main/java/api/steps/home_work/PostReqresStep.java
+/Users/klukina9013/Downloads/RestAssured/src/main/java/api/steps/home_work/GetReqresStep.java
+/Users/klukina9013/Downloads/RestAssured/src/main/java/api/models/CreateUserPayload.java
+/Users/klukina9013/Downloads/RestAssured/src/main/java/api/models/Users.java
+/Users/klukina9013/Downloads/RestAssured/src/main/java/api/models/ListUsersResponse.java
+/Users/klukina9013/Downloads/RestAssured/src/main/java/api/steps/home_work/PutReqresStep.java
+/Users/klukina9013/Downloads/RestAssured/src/main/java/api/steps/seminar/ReqresSteps.java
+/Users/klukina9013/Downloads/RestAssured/src/main/java/api/models/UserResponse.java
+/Users/klukina9013/Downloads/RestAssured/src/main/java/api/steps/home_work/DeleteReqresStep.java
